@@ -5,7 +5,7 @@ dumper.max_depth = 10
 import sys
 import importlib
 
-sys.path.insert(1, './conf')
+sys.path.insert(1, './conf') #1
 
 
 def load_config(name):
