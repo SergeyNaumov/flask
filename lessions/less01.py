@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*- 
+
+'''
+    dumper
+    динамическая загрузка модулей
+    сортировка массива хешей по description
+'''
+
 import dumper
 dumper.max_depth = 10
 
