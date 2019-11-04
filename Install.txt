@@ -1,0 +1,5 @@
+sudo apt-get install python-virtualenv
+virtualenv venv
+source venv/bin/activate # для активации среды
+# deactivate # -- для деактивации среды
+pip install flask
