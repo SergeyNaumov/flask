@@ -1,14 +1,14 @@
 def permission1():
-    print "RUN permission 1"
+    print("RUN permission 1")
 
 def permission2():
-    print "RUN permission 2"
+    print("RUN permission 2")
 
 def after_insert1():
-    print "RUN after_insert1"
+    print("RUN after_insert1")
 
 def after_insert2():
-    print "RUN after_insert2"
+    print("RUN after_insert2")
 
 
 form={
@@ -17,13 +17,13 @@ form={
     'work_table_id':'id',
     'events':{
         'permissions':[
-            permission1,
-            permission2
+            #permission1,
+            #permission2
         ],
         
         'after_insert':[
-            after_insert1,
-            after_insert2,
+            #after_insert1,
+            #after_insert2,
         ]
     },
     'fields':[
