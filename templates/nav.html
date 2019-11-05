@@ -1,0 +1,22 @@
+<ul class="nav">
+{% for m in menu %}
+  {% if m.child|length %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle{% if m.act%} active{% endif %}{% if m.disabled %} disabled{% endif %}" href="#">{{ m.header }}</a>
+        <div class="dropdown-menu">
+            {% for m2 in m.child %}
+            <a class="dropdown-item" href="#">{{ m2.header }}</a>
+            {% endfor %}
+        </div>
+      </li>
+  {% else %}
+      <li class="nav-item">
+        <a class="nav-link{% if m.act%} active{% endif %}{% if m.disabled %} disabled{% endif %}" href="#">{{ m.header }}</a>
+      </li>
+  {% endif %}
+
+
+
+{% endfor %}
+
+</ul>
