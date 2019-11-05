@@ -45,8 +45,7 @@ def index():
             "header":u'Добро пожаловать',
             "body":u'съешь этих мягких французских булок, да выпей чаю'
         },
-        menu=menu,
-        flag=1
+        menu=menu
     )
 
 
@@ -58,6 +57,7 @@ def login_form():
             "header":u'вход в систему',
             "body":u'в этой форме мы входим в систему'
         },
+        menu=menu
     )
 
 @app.route('/302')
